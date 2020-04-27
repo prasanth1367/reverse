@@ -1,5 +1,5 @@
- C Program to Reverse the Contents of a File and Print it
- */
+// C Program to Reverse the Contents of a File and Print it
+ 
 #include <stdio.h>
 #include <errno.h>
  
@@ -47,20 +47,6 @@ long count_characters(FILE *f)
 
 
 
-//C Program to Copy Contents From One File to Another
-#include <stdio.h>
-main()
-{
-    FILE *fp1, *fp2;
-    char ch;
-    fp1 = fopen("abc.txt", "r");
-    fp2 = fopen("xyz.txt", "w");
-    while((ch = getc(fp1)) != EOF)
-        putc(ch, fp2);
-    fclose(fp1);
-    fclose(fp2);
-    getch();
-}
 
 
 
